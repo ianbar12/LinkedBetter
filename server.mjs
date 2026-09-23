@@ -19,7 +19,7 @@ function loadDotEnv(file) {
 }
 loadDotEnv(path.join(HERE,'.env'));
 const PORT = Number(process.env.PORT || 8787);
-const HOST = process.env.HOST || '127.0.0.1';
+const HOST = '0.0.0.0';
 const CLIENT_ID = process.env.LINKEDIN_CLIENT_ID;
 const CLIENT_SECRET = process.env.LINKEDIN_CLIENT_SECRET;
 const REDIRECT_URI = process.env.LINKEDIN_REDIRECT_URI || '';
